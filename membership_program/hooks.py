@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from . import __version__ as app_version
-import erpnext
 
 app_name = "membership_program"
 app_title = "Membership Program"
