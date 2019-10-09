@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from . import __version__ as app_version
+import erpnext
 
 app_name = "membership_program"
 app_title = "Membership Program"
@@ -111,7 +112,7 @@ app_license = "MIT"
 # Testing
 # -------
 
-# before_tests = "membership_program.install.before_tests"
+before_tests = "erpnext.setup.utils.before_tests"
 
 # Overriding Whitelisted Methods
 # ------------------------------
