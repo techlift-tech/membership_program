@@ -16,7 +16,7 @@ jobs:
   include:
   - name: "Python 2.7 Server Side Test"
     python: 2.7
-    script: bench --verbose --site test_site run-tests --app erpnext --coverage
+    script: bench --verbose --site test_site run-tests --app membership_program --coverage
 
 install:
   - cd ~
@@ -54,6 +54,7 @@ install:
   - sed -i 's/redis_socketio:/# redis_socketio:/g' Procfile
 
   - bench get-app erpnext --branch version-11 
+  - bench get-app membership_program $TRAVIS_BUILD_DIR
   - bench start &
   - bench --site test_site reinstall --yes
 
