@@ -1,0 +1,13 @@
+[
+    {
+        "doctype": "Membership Card",
+        "membership_program": "_Test Membership Program",
+        "card_name": "Test Card",
+        "category": "Silver",
+        "card_cost": 100,
+        "valid_for_in_months": 4,
+        "maximum_members_allowed": 4,
+        "discount": 20,
+        "expnse_account": "Expense"
+    }
+]

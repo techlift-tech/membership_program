@@ -6,5 +6,9 @@ from __future__ import unicode_literals
 import frappe
 import unittest
 
+test_records = frappe.get_test_records('Membership Program')
+
+
 class TestMembershipProgram(unittest.TestCase):
-	pass
+    def test_test(self):
+        return True

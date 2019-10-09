@@ -6,5 +6,8 @@ from __future__ import unicode_literals
 import frappe
 import unittest
 
+test_records = frappe.get_test_records('Membership Card')
+
 class TestMembershipCard(unittest.TestCase):
-	pass
+    def test_card_cost(self):
+        return True
