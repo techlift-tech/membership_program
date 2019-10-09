@@ -58,7 +58,7 @@ install:
   - sed -i 's/redis_socketio:/# redis_socketio:/g' Procfile
 
   - bench get-app erpnext $TRAVIS_BUILD_DIR
-  - bench get-app https://github.com/techlift-tech/membership_program $TRAVIS_BUILD_DIR
+  - bench get-app membership_program $TRAVIS_BUILD_DIR
   - bench start &
   - bench --site test_site reinstall --yes
 
