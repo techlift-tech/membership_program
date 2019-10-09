@@ -16,7 +16,7 @@ jobs:
   include:
   - name: "Python 2.7 Server Side Test"
     python: 2.7
-    script: bench --site test_site run-tests --app erpnext --coverage
+    script: bench --verbose --site test_site run-tests --app erpnext --coverage
 
 install:
   - cd ~
